@@ -1,9 +1,12 @@
-import React from 'react'
+import Hero from "@/components/Hero";
+import perfImg from "public/performance.jpg";
 
-function Performance () {
+export default function Performance() {
   return (
-    <div>Performance </div>
-  )
+    <div>
+      <Hero imgData={perfImg} imgAlt="welding" title="We serve high Perf apps" />{" "}
+    </div>
+  );
 }
 
-export default Performance 
+// hero component --> image on background

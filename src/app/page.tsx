@@ -1,14 +1,13 @@
-import Link from "next/link";
+import Hero from "@/components/Hero";
+import homeImg from "public/home.jpg";
 
 export default function Home() {
   return (
-    <div className="flex flex-row justify-between items-center">
-      <span>Home Page</span>
-      <span className="flex flex-row items-end space-x-4">
-        <Link href="/performance">Goto Perf Page!</Link>
-        <Link href="/reliability">Goto Rel Page!</Link>
-        <Link href="/scale">Goto Scale Page!</Link>
-      </span>
+    <div>
+      Home Page
+      <Hero imgData={homeImg} imgAlt="home" title="abcd" />{" "}
     </div>
   );
 }
+
+// hero component --> image on background

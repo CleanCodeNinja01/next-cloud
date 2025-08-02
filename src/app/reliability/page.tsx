@@ -1,9 +1,12 @@
-import React from 'react'
+import Hero from "@/components/Hero";
+import relImg from "public/reliability.jpg";
 
-function Reliability () {
+export default function Reliability() {
   return (
-    <div>Reliability </div>
-  )
+    <div>
+      <Hero imgData={relImg} imgAlt="rel" title="We serve reliable apps!" />{" "}
+    </div>
+  );
 }
 
-export default Reliability 
+// hero component --> image on background
